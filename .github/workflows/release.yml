@@ -1,0 +1,21 @@
+name: Release
+on:
+  create:
+    tags: 
+      - 'v*'
+  workflow_dispatch:
+  
+jobs:
+  publishSite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: olafurpg/setup-scala@v13
+      - name: Generate website
+        run: sbt makeSite
+      - uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          repository-name: tesla-optimizer/tesla-optimizer.github.io
+          branch: master
+          token: ${{ secrets.DOC_GITHUB_TOKEN }}
+          folder: french/target/site
