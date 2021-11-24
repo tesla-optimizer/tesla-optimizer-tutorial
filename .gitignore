@@ -1,0 +1,24 @@
+*.class
+*.log
+
+# sbt specific
+.DS_Store/
+.cache/
+.history/
+.metals/
+.lib/
+.bloop/
+.vscode/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.bsp/
+.DS_Store
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+.idea
