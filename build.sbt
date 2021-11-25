@@ -3,7 +3,6 @@ import sbt.project
 import java.util.Locale
 
 name := "tesla-optimizer-tutorial"
-version := "0.1"
 scalaVersion := "2.13.7"
 
 
@@ -14,7 +13,7 @@ lazy val french = (project in file("french"))
       "image.base_url" -> ".../assets",
       "project.description" -> "Guide de montage d'un système d'optimisation de charge en continu pour véhicules Tesla",
       "project.title" -> "Tesla optimizer",
-      "project.image" -> "https://tesla-optimizer.github.io/assets/logo.svg"
+      "project.image" -> "https://tesla-optimizer.github.io/assets/open-graph-logo.png"
     ),
     Compile / paradoxMaterialTheme := {
       val theme = (Compile / paradoxMaterialTheme).value
