@@ -27,6 +27,6 @@ lazy val french = (project in file("french"))
         .withCopyright("Tesla-optimizer contributors")
         .withLanguage(Locale.FRENCH)
         .withColor("light green", "light green")
-        .withGoogleAnalytics("")
+        .withGoogleAnalytics("G-JPNJ7NZED4")
     }
   )
